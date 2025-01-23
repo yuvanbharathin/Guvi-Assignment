@@ -1,0 +1,857 @@
+/* General reset for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #FEFCFB; */
+}
+
+/* Set the body font and background */
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    color: #333;
+}
+body h1{
+
+  font-family: "Volkhov", serif;
+}
+
+/* Content wrapper to constrain width to 1170px */
+.content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+/* Navbar Styles */
+header {
+    /* background-color: #FEFCFB; */
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center; /* Center the navbar horizontally */
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space out items between left, center, and right */
+    align-items: center;
+    max-width: 1200px;
+    width: 100%; /* Full width */
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 20px; /* Adjust size of the logo */
+}
+
+nav {
+    flex-grow: 1; /* Allow nav to take up available space */
+    text-align: center; /* Center the links */
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Highlight color on hover */
+}
+
+/* Auth buttons */
+.auth-buttons {
+    display: flex;
+}
+
+.auth-buttons button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.login-btn {
+    background-color: #FEFCFB; /* Green */
+    color: #FD8D3A;
+}
+
+.signup-btn {
+    background-color: #FD8D3A; /* Blue */
+    color: white;
+}
+
+.auth-buttons button:hover {
+    opacity: 0.8; /* Fade effect on hover */
+}
+
+/* Add some spacing for the sections */
+section {
+    padding: 2rem;
+    margin-top: 20px;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+/* Article Section */
+.article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.article-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+.article-content .journey{
+    color: #FA7436;
+}
+.text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.text h2 {
+  font-family: "Volkhov", serif;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.discover-btn {
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #FA7436;
+    font-weight: bold;
+    border: solid;
+    border-width: thin;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* .discover-btn:hover {
+    background-color: #0056b3;
+} */
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Add some spacing for the sections */
+section {
+    padding: 2rem;
+    margin-top: 20px;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+/* Horizontal Card Section */
+.content-wrapper-card{
+    max-width: 841px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.horizontal-card {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card-field {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
+.card-field h3 {
+    font-size: 1rem;
+    flex-shrink: 0; 
+}
+
+.card-field p {
+    font-size: .5rem;
+    color: #777;
+}
+
+.card-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    background-color: #FA7436;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* .explore-btn:hover {
+    background-color: #0056b3;
+} */
+
+/* Dropdown Icon Styles */
+.dropdown {
+    display: inline-block;
+    padding: 5px;
+}
+
+.dropdown img {
+    height: 5px;
+    cursor: pointer;
+}
+
+/* Add some spacing for the sections */
+section {
+    padding: 2rem;
+    margin-top: 20px;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+/* Things You need to do Section*/
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    text-align: center;
+  }
+
+  .text-content {
+    max-width: 600px;
+    margin-right: 20px;
+  }
+
+  .text-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .text-content p {
+
+    font-size: 1rem;
+    color: #555;
+  }
+  .text-content .Todo{
+    color: #FA7436;
+}
+
+  .image-content img {
+    max-width: 100px;
+    border-radius: 10px;
+  }
+
+  .cards-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+  }
+
+  .card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 350px;
+    height: 180px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+
+  .card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  .card p {
+    font-size: 10px;
+    color: #666;
+  }
+  
+
+  /* Exclusive deals & discounts */
+
+  .section {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .section h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+
+  .section h1 span {
+    color: #FA7436;
+  }
+
+  .section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .deal-card {
+    width: 170px;
+    height: 250px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .deal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .deal-card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+  }
+
+  .card-content {
+    padding: 15px;
+    text-align: left;
+  }
+
+  .card-content .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .card-content h3 {
+    font-size: 15px;
+    color: #333;
+    margin: 0;
+  }
+
+  .card-content .rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .card-content .rating span {
+    color: gold;
+    font-size: 10px;
+  }
+
+  .card-content p {
+    font-size: 10px;
+    color: #666;
+    margin: 5px 0;
+  }
+
+  .card-content .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .card-content .price .old-price {
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 10px;
+  }
+
+  .card-content .price .new-price {
+    color: orange;
+    font-weight: bold;
+    font-size: 10px;
+  }
+
+/* Best vacation plan */
+
+  .section-plan {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .section-plan h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+
+  .section-plan h1 span {
+    color: #FA7436;
+  }
+
+  .section-plan p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .card-container-plan {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .deal-card-plan {
+    width: 220px;
+    height: 280px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .deal-card-plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .deal-card-plan img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .card-content-plan {
+    padding: 15px;
+    text-align: left;
+  }
+
+  .card-content-plan .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .card-content-plan h3 {
+    font-size: 15px;
+    color: #333;
+    margin: 0;
+  }
+
+  .card-content-plan .rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .card-content-plan .rating span {
+    color: gold;
+    font-size: 10px;
+  }
+
+  .card-content-plan p {
+    font-size: 10px;
+    color: #666;
+    margin: 5px 0;
+  }
+
+/* Get update with latest blog */
+
+.section-latest {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .section-latest h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+
+  .section-latest h1 span {
+    color: #FA7436;
+  }
+
+  .section-latest p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .card-container-latest {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .deal-card-latest {
+    width: 220px;
+    height: 280px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .deal-card-latest:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .deal-card-latest img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .card-content-latest {
+    padding: 15px;
+    text-align: left;
+  }
+
+  .card-content-latest .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .card-content-latest h3 {
+    font-size: 10px;
+    color: #333;
+    margin: 0;
+  }
+
+  .card-content-latest .rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .card-content-latest .rating span {
+    color: gold;
+    font-size: 10px;
+  }
+
+  .card-content-latest p {
+    font-size: 10px;
+    color: #666;
+    margin: 5px 0;
+  }
+
+/* Testimonial */
+.testimonial-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.testimonial-text {
+  max-width: 50%;
+}
+
+.testimonial-text h1 {
+  font-family: "Volkhov", serif;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.testimonial-text span{
+  color:#FA7436;
+}
+
+.testimonial-text p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.controls button {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background: #e25500;
+}
+
+.testimonial-image {
+  max-width: 40%;
+}
+
+.testimonial-image img {
+  width: 100%;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+
+
+/* Footer*/
+  footer {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .footer-section h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-section ul li a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .footer-section ul li a:hover {
+    color: #FA7436;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #FA7436;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .social-icons a:hover {
+    background-color: #FA7436;
+    color: #fff;
+    transform: scale(1.1);
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #999;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .auth-buttons {
+        margin-top: 20px;
+    }
+
+    .auth-buttons button {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Article section adjustments for small screens */
+    .article-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .image img {
+        max-width: 80%;
+    }
+
+    /* Horizontal Card Adjustments for Small Screens */
+    .card-content {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .card-button {
+        justify-content: center;
+    }
+/* For things you want to do */
+    @media (max-width: 1024px) {
+        .cards-section {
+          justify-content: center;
+        }
+  
+        .card {
+          width: 100%;
+          max-width: 370px;
+        }
+  
+        .main-section {
+          flex-direction: column;
+          text-align: center;
+        }
+  
+        .text-content {
+          margin: 0 0 20px 0;
+        }
+      }
+  
+      @media (max-width: 768px) {
+        .text-content h1 {
+          font-size: 1.8rem;
+        }
+  
+        .text-content p {
+          font-size: 1rem;
+        }
+  
+        .card {
+          width: 90%;
+        }
+      }
+  
+      @media (max-width: 480px) {
+        .text-content h1 {
+          font-size: 1.5rem;
+        }
+  
+        .text-content p {
+          font-size: 0.9rem;
+        }
+  
+        .card {
+          padding: 15px;
+          box-shadow: none;
+        }
+      }
+}
