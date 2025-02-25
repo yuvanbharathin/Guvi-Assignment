@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.input-section, .totals, .entry-list {
+    margin-bottom: 20px;
+}
+
+.input-section input[type="text"], .input-section input[type="number"] {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(50% - 15px);
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.input-section input[type="radio"] {
+    margin-left: 10px;
+}
+
+.input-section button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+#add {
+    background-color: #28a745;
+    color: white;
+}
+
+#reset {
+    background-color: #dc3545;
+    color: white;
+}
+
+.totals p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.totals span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.entry-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.entry-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.entry-list li span {
+    flex: 1;
+}
+
+.entry-list button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.entry-list .edit {
+    background-color: #ffc107;
+    color: white;
+    margin-right: 5px;
+}
+
+.entry-list .delete {
+    background-color: #dc3545;
+    color: white;
+}
